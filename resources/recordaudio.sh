@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script records 60 seconds of audio and uploads it to the server
+
 # https://stackoverflow.com/questions/14757720/how-to-record-sound-in-os-x-terminal
 # brew update
 # brew install sox
