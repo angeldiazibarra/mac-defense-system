@@ -5,7 +5,6 @@
 uuid=$(ioreg -d2 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $(NF-1)}')
 loc=$(./LocateMe -f "{\"lat\":{LAT},\"lon\":{LON},\"alt\":{ALT},\"time\":\"{TIME}\",\"uuid\":\"$uuid\"}")
 
-
 echo $loc >> $uuid-location.json
 
 # Upload file to server
