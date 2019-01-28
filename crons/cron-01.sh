@@ -6,6 +6,9 @@ sh screenshot.sh
 # Uncomment the following line to capture a photo (requires permissions)
 # sh photo.sh 
 
+# Uncomment the following line to record audio (requires permissions)
+# sh recordaudio.sh
+
 # Uncomment the following line to capture GPS location (requires permissions)
 # sh locateme.sh 
 
