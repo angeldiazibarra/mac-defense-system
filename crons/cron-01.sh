@@ -1,17 +1,13 @@
 #!/bin/bash
-#This script will silently capture a screenshot and upload it to your server
 
-#Uncomment the following 2 lines to open FaceTime and take a photo of the thief
-# open facetime://
-# sleep 5
+# Uncomment the following line to capture a screenshot
+sh screenshot.sh 
 
-# Define a timestamp variable
-timestamp=$(date +%s)
-username=$(osascript -e "host name of (system info)")
+# Uncomment the following line to capture a photo
+sh photo.sh 
 
-screencapture -x $username-$timestamp.png
+# Uncomment the following line to capture GPS location
+# sh locateme.sh 
 
-#TO DO - upload to server
-
-#Uncomment the following line to activate the alarm
+# Uncomment the following line to activate the alarm
 # osascript soundalarm.scpt 

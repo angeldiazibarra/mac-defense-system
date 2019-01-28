@@ -1,4 +1,4 @@
 tell application "System Events"
-    click at {10, 10}
+    click at {872, 312}
 end tell
 

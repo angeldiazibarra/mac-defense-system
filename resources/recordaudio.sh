@@ -5,5 +5,5 @@
 # brew install sox
 # brew install coreutils
 
-# record audio for 10 seconds
-gtimeout 10 sox -d audiorecording.mp3
+# record audio for 1 minute, upload to server
+gtimeout 60 sox -d audiorecording.mp3

