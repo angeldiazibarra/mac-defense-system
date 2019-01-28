@@ -1,10 +1,9 @@
-Image Snap
-
-by Robert Harder
+Image Snap by Robert Harder
 rob@iHarder.net
+http://iharder.net/imagesnap
 
 Capture Images from the Command Line
-http://iharder.net/imagesnap
+
 ImageSnap is a Public Domain command-line tool that lets you capture still images from an iSight or other video source.
 Installation
 Copy the imagesnap file to someplace on your path like /usr/local/bin, or leave it in a "current directory," and call it with ./imagesnap instead.

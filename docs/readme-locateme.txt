@@ -1,9 +1,6 @@
+LocateMe by Robert Harder
+rob@iharder.net
 http://iharder.sourceforge.net/current/macosx/locateme/
-
-Program: LocateMe
-Author: Robert Harder
-Email: rob@iharder.net
-Website: http://iharder.sourceforge.net
 
 DESCRIPTION
 
