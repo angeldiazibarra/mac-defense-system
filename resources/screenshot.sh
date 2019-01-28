@@ -5,6 +5,10 @@
 # open facetime://
 # sleep 5
 
+# Uncomment the following 2 lines to open Google Maps and take a screenshot of the thief's location
+# open -a "Google Chrome" https://www.google.com/maps/
+# sleep 5
+
 # timestamp=$(date +%s)
 uuid=$(ioreg -d2 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $(NF-1)}')
 
