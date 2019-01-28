@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Uncomment the following line to capture a screenshot
-sh screenshot.sh 
+# sh screenshot.sh 
 
 # Uncomment the following line to track the IP
 sh getip.sh
