@@ -12,7 +12,7 @@
 # timestamp=$(date +%s)
 uuid=$(/usr/sbin/ioreg -d2 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $(NF-1)}')
 
-screencapture -x $uuid-screenshot.png
+/usr/sbin/screencapture -x $uuid-screenshot.png
 
 # Upload file to server
 scp $uuid-screenshot.png eudomus@metricspot.com:/home/eudomus/webapps/macdefense
