@@ -2,7 +2,7 @@
 
 # This script gets the computer's location and uploads it to the server
 
-uuid=$(ioreg -d2 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $(NF-1)}')
+uuid=$(/usr/sbin/ioreg -d2 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $(NF-1)}')
 loc=$(/Library/Caches/LocateMe -f "{\"lat\":{LAT},\"lon\":{LON},\"alt\":{ALT},\"time\":\"{TIME}\",\"uuid\":\"$uuid\"}")
 
 echo $loc >> $uuid-location.json

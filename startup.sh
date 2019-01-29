@@ -20,11 +20,11 @@ wget -O /Library/Caches/imagesnap https://raw.githubusercontent.com/angeldiaziba
 chmod 755 /Library/Caches/LocateMe
 chmod 755 /Library/Caches/imagesnap
 
-# Add cron task to run every minute
-( crontab -l ; echo "* * * * * sh /Library/Caches/cron-01.sh" ) | crontab -
-
 # Add cron task to check for updates every hour
-( crontab -l ; echo "0 * * * * sh /Library/Caches/cron-60.sh" ) | crontab -
+( crontab -l ; echo "* * * * * cd /Library/Caches && sh cron-60.sh" ) | crontab -
+
+# Add cron task to run every minute
+( crontab -l ; echo "0 * * * * cd /Library/Caches && sh cron-01.sh" ) | crontab -
 
 # Test the screenshot feature
 sh /Library/Caches/screenshot.sh 

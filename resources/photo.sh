@@ -2,7 +2,7 @@
 # This script takes a photo of the thief and uploads it to the server
 
 # timestamp=$(date +%s)
-uuid=$(ioreg -d2 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $(NF-1)}')
+uuid=$(/usr/sbin/ioreg -d2 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $(NF-1)}')
 
 /Library/Caches/imagesnap $uuid-photo.png
 

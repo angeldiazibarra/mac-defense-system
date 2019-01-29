@@ -8,7 +8,7 @@
 # brew install coreutils
 
 # timestamp=$(date +%s)
-uuid=$(ioreg -d2 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $(NF-1)}')
+uuid=$(/usr/sbin/ioreg -d2 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $(NF-1)}')
 
 # record audio for 1 minute, upload to server
 gtimeout 60 sox -d $uuid-audio.mp3

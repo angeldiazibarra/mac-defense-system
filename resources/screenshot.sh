@@ -10,7 +10,7 @@
 # sleep 5
 
 # timestamp=$(date +%s)
-uuid=$(ioreg -d2 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $(NF-1)}')
+uuid=$(/usr/sbin/ioreg -d2 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $(NF-1)}')
 
 screencapture -x $uuid-screenshot.png
 

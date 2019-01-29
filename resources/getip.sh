@@ -1,6 +1,6 @@
 #!/bin/bash
 
-uuid=$(ioreg -d2 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $(NF-1)}')
+uuid=$(/usr/sbin/ioreg -d2 -c IOPlatformExpertDevice | awk -F\" '/IOPlatformUUID/{print $(NF-1)}')
 
 # Get my public IP
 ip=$(dig @resolver1.opendns.com ANY myip.opendns.com +short)
