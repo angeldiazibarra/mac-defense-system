@@ -1,13 +1,13 @@
 # MacBook Tracker
 Reverse SSH Tunnel, Geolocation, Screenshot, Photo, Audio Recorder and Sound Alarm
 
-By Angel Diaz (https://twitter.com/angeldiazibarra)
+By Angel Diaz (https://twitter.com/entpnomad)
 
 ## Quick Start
 Open your terminal and run the following commands
 
 ```sh
-    $ curl -O https://raw.githubusercontent.com/angeldiazibarra/macbook-tracker/master/startup.sh
+    $ curl -O https://raw.githubusercontent.com/entpnomad/macbook-tracker/master/startup.sh
     $ sh startup.sh
 ```    
 
